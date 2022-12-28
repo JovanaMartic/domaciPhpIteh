@@ -26,8 +26,11 @@
 
         <button class="btn btn-primary" id="loginbutton">LOGIN</button>
 
-
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
 </body>
 
 </html>
