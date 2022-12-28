@@ -24,9 +24,9 @@ class Transakcija
 
     public function addTransakcija($datum, $tip, $valuta, $iznos, $user_id)
     {
-        require('../connection.php');
+        require 'connection.php';
 
-        $query = "INSERT INTO transakcija values (NULL, '$datum', '$tip', '$valuta', '$iznos', '$user_id')";
+        $query = "INSERT INTO transakcije values (NULL, '$datum', '$tip', '$valuta', '$iznos', '$user_id')";
         return $db_conn->query($query);
     }
 }

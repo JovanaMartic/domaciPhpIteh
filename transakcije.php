@@ -17,6 +17,7 @@
     <div class="body-transakcije">
 
         <h3 id="transakcije-heading">TRANSAKCIJE</h3>
+        <a href="add-transakcija.php"><button class="btn btn-dark" id="buttonadd">ADD</button></a>
 
         <div class="table-transakcije">
             <table class="table table-bordered border-info table-striped mt-3">
