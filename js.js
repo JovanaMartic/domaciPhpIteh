@@ -1,6 +1,7 @@
 $(function () {
     login();
     deleteTransakcija();
+    findTransakcija();
 });
 
 function login() {
@@ -42,6 +43,26 @@ function deleteTransakcija() {
             method: 'POST',
             data: {
                 transakcija_id: $(this).attr('transakcija_id'),
+            }
+        })
+    })
+
+}
+
+
+function findTransakcija() {
+
+    $(document).on('keyup', '#datum_input', function () {
+
+        $.ajax({
+            url: 'ajax/find_transakcija.php',
+            method: 'POST',
+            data: {
+                datum: $(this).val(),
+                user_id: localStorage.getItem('user')
+            },
+            success: function (data) {
+                $('#body_tabela').html(data)
             }
         })
     })

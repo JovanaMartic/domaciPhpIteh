@@ -45,3 +45,9 @@
 #buttonadd {
     margin-left: 100px;
 }
+
+#datum_input {
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 300px;
+}
