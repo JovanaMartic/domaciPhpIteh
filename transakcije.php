@@ -27,6 +27,7 @@
                         <th>TIP</th>
                         <th>VALUTA</th>
                         <th>IZNOS</th>
+                        <th> </th>
                     </tr>
                 </thead>
 
@@ -47,6 +48,7 @@
                             <td><?php echo $transakcija['tip'];  ?></td>
                             <td><?php echo $transakcija['valuta'];  ?></td>
                             <td><?php echo $transakcija['iznos'];  ?></td>
+                            <td><button id="delete_transakcijabutton" class="btn btn-dark" transakcija_id="<?php echo $transakcija['id']; ?>">Delete</button></td>
                         </tr>
                     <?php
                     }
