@@ -19,6 +19,7 @@ function login() {
                 if (data.result == 1) {
                     alert("Uspesan login!")
                     localStorage.setItem('user', data.user)
+                    window.location.href = "transakcije.php";
                 }
                 else {
                     alert("Neuspesan login!")
